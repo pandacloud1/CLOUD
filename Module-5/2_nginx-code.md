@@ -11,7 +11,7 @@ git clone https://github.com/pandacloud1/webapp1.git && cd webapp1
 sudo cp * -R /var/www/html/
 ```
 
-## INSTALLING APACHE IN AMAZON LINUX 2
+## INSTALLING APACHE IN AMAZON LINUX 
 REF: [https://stackoverflow.com/questions/57784287/how-to-install-nginx-on-aws-ec2-linux-2]
 
 ```sh
