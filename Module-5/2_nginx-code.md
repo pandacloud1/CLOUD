@@ -22,6 +22,6 @@ sudo yum update -y
 sudo amazon-linux-extras install nginx1 -y
 sudo yum install git -y
 git clone https://github.com/pandacloud1/webapp1.git && cd webapp1
-cp * -R /usr/share/nginx/html/
+sudo cp * -R /usr/share/nginx/html/
 sudo systemctl restart nginx
 ```
