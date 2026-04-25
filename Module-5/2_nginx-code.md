@@ -8,7 +8,7 @@ sudo apt update
 sudo apt install git nginx -y
 sudo systemctl enable nginx
 git clone https://github.com/pandacloud1/webapp1.git && cd webapp1
-cp * -R /var/www/html/
+sudo cp * -R /var/www/html/
 ```
 
 ## INSTALLING APACHE IN AMAZON LINUX 2
