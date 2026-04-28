@@ -25,6 +25,10 @@ Create mount point
 ```sh
 sudo mount /dev/xvdf1 /disk2                                  
 ```
+Verify mount
+```sh
+lsblk
+```
 Unmount original volume (optional)
 ```sh
 sudo umount /disk2                                                       # 
