@@ -12,7 +12,7 @@ List block storage & mount points
 ```sh
 lsblk
 ```
-Create file system (To organize file structure for external devices
+Create file system (To organize file structure for external devices)
 ```sh
 sudo mkfs -t ext4 /dev/xvdf1
 ```
