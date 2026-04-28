@@ -16,7 +16,7 @@ Create file system (To organize file structure for external devices)
 ```sh
 sudo mkfs -t ext4 /dev/xvdf1
 # (Here 'xvdf1' is the name of volume, replace it with actual volume name xvdb1, xvdc1, etc from lsblk command)
-# (All external devices appear in '/dev' directory in Linux systems)
+# (All external devices appear in '/dev' (devices) directory in Linux systems)
 ```
 Create any directory to mount the volume
 ```sh
