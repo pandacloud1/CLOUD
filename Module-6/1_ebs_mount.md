@@ -21,6 +21,7 @@ sudo mkfs -t ext4 /dev/xvdf1
 Create any directory to mount the volume
 ```sh
 sudo mkdir /mnt/disk2
+# (As a standard practise, all external devices must be mounted in '/mnt' directory in Linux, but it is completely optional)
 ```                                            
 Create mount point
 ```sh
