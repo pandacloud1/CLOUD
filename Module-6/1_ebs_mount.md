@@ -23,7 +23,7 @@ sudo mkdir /disk2
 Create mount point
 ```sh
 sudo mount /dev/xvdf1 /disk2
-# (Here 'xvdf1' is an name of volume, replace it with actual volume name xvdb1, xvdc1, etc from lsblk command)                                             
+# (Here 'xvdf1' is the name of volume, replace it with actual volume name xvdb1, xvdc1, etc from lsblk command)                                             
 ```
 Unmount original volume (optional)
 ```sh
