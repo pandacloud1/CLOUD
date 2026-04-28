@@ -7,6 +7,7 @@
   Stop the original instance & attach the volume & run below commands
 
 - COMMANDS
+
 List block storage & mount points
 ```sh
 lsblk
