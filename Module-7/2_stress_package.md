@@ -1,3 +1,16 @@
+## INSTALL STRESS PACKAGE IN AMAZON LINUX 2023
+
+```sh
+sudo dnf update -y
+sudo dnf install stress -y
+```
+
+Trigger CPU using below command
+```sh
+stress --cpu 4 --timeout 60s
+```
+
+
 ## Installing stress package in Amazon Linux 2
 REF: [https://gist.github.com/mikepfeiffer/d27f5c478bef92e8aff4241154b77e54]
 
