@@ -11,7 +11,7 @@ stress --cpu 4 --timeout 60s
 ```
 
 
-## Installing stress package in Amazon Linux 2
+## INSTALL STRESS PACKAGE IN AMAZON LINUX 2
 REF: [https://gist.github.com/mikepfeiffer/d27f5c478bef92e8aff4241154b77e54]
 
 ```sh
