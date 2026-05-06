@@ -30,10 +30,10 @@
             "Sid": "ListBucket",
             "Effect": "Allow",
             "Principal": {
-                "AWS": "arn:aws:iam::207567771980:user/user1"
+                "AWS": "<IAM-USER-ARN>"
             },
             "Action": "s3:ListBucket",
-            "Resource": "arn:aws:s3:::test-05052026"
+            "Resource": "<S3-BUCKET-ARN>"
         },
         {
             "Sid": "DeleteObjects",
@@ -42,7 +42,7 @@
                 "AWS": "arn:aws:iam::207567771980:user/user1"
             },
             "Action": "s3:DeleteObject",
-            "Resource": "arn:aws:s3:::test-05052026/*"
+            "Resource": "<S3-BUCKET-ARN>/*"
         }
     ]
 } 
