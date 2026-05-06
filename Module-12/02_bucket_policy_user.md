@@ -1,4 +1,4 @@
-## BUCKET POLICY
+## BUCKET POLICY FOR IAM USER
 - This policy is used to give access to specific user to list & delete S3 bucket objects
 
 ### Creating policy for user
