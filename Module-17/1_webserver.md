@@ -1,0 +1,13 @@
+## APACHE WEBSERVER SCRIPT (User data)
+
+```sh
+#!/bin/bash
+sleep 30
+
+sudo yum update -y
+sudo yum install git httpd -y
+sudo service httpd start
+sudo chkconfig httpd on
+git clone https://github.com/pandacloud1/webapp1.git && cd webapp1
+sudo cp * -R /var/www/html/
+```
