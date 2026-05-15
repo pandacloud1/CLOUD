@@ -31,3 +31,4 @@ INSERT INTO mytable (name, mobile_no, email) VALUES ('ethan', '9876543230', 'eth
 ```sh
 SELECT * FROM mytable;
 ```
+<img width="723" height="180" alt="image" src="https://github.com/user-attachments/assets/42c0a1a9-4201-4593-a426-27688c40556a" />
