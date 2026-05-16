@@ -1,4 +1,6 @@
 ## COMMANDS TO SSH FROM SERVER-1 TO SERVER-2
+- We need to have the destination Server key in our existing server
+- The key must have executable permissions to the user
 
 ### Manually create pem key
 ```sh
