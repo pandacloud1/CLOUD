@@ -4,6 +4,7 @@
 ```sh
 vi key-name.pem
 # Paste the pem key content
+# Press 'Esc' --> ':wq' to exit the editor
 ```
 
 ### Give executable permissions only to user
