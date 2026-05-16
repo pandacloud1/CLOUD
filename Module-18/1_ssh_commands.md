@@ -7,7 +7,7 @@ vi key-name.pem
 # Press 'Esc' --> ':wq' to exit the editor
 ```
 
-### Give executable permissions only to user
+### Give executable permissions to the key only for the user
 ```sh
 chmod 600 <key-name>.pem
 ```
