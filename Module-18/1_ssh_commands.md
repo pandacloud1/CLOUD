@@ -1,0 +1,19 @@
+## COMMANDS TO SSH FROM SERVER-1 TO SERVER-2
+
+### Manually create pem key
+```sh
+vi key-name.pem
+# Paste the pem key content
+```
+
+### Give executable permissions only to user
+```sh
+chmod 600 <key-name>.pem
+```
+
+### SSH from Server-1 --> Server-2
+```sh
+ssh -i <Server-2-key> <Server2-user>@<Server-2-PrivateIP>
+# eg.
+ssh -i Server2.pem ec2-user@10.0.1.25
+```
