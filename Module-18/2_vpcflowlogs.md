@@ -21,7 +21,7 @@ curl https://example.com
 
 * Hit **Enter**
 * Wait for a few minutes if logs are not appearing immediately.
-* * Visit [https://www.nslookup.io/website-to-ip-lookup/] to get IP associated with `example.com`
+* Visit [https://www.nslookup.io/website-to-ip-lookup/] to get IP associated with `example.com`
 
 ### Example Log Explanation
 
