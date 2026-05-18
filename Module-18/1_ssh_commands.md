@@ -4,14 +4,14 @@
 
 ### Manually create pem key
 ```sh
-vi key-name.pem
+vi <Server-2-key>.pem
 # Paste the pem key content
 # Press 'Esc' --> ':wq' to exit the editor
 ```
 
 ### Give executable permissions to the key only for the user
 ```sh
-chmod 700 <key-name>.pem
+chmod 700 <Server-2-key>.pem
 ```
 
 ### SSH from Server-1 --> Server-2
