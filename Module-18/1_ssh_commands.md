@@ -11,7 +11,7 @@ vi key-name.pem
 
 ### Give executable permissions to the key only for the user
 ```sh
-chmod 600 <key-name>.pem
+chmod 700 <key-name>.pem
 ```
 
 ### SSH from Server-1 --> Server-2
