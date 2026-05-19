@@ -17,9 +17,9 @@ Follow the same steps above and create SG, TG, ALB, ASG in another region (Examp
 sudo yum update -y
 sudo yum install git httpd -y
 service httpd start
-chkconfig httpd on
+sudo chkconfig httpd on
 git clone https://github.com/pandacloud1/webapp1.git && cd webapp1
-cp * -R /var/www/html/
+sudo cp * -R /var/www/html/
 ```
 
 ### Installation Script (Region-2)
@@ -28,11 +28,10 @@ cp * -R /var/www/html/
 #!/bin/bash
 sudo yum update -y
 sudo yum install git httpd -y
-service httpd start
-chkconfig httpd on
-
+sudo service httpd start
+sudo chkconfig httpd on
 git clone https://github.com/pandacloud1/webapp1-india.git && cd webapp1-india
-cp * -R /var/www/html/
+sudo cp * -R /var/www/html/
 ```
 
 ## Route 53
