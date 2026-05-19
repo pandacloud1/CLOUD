@@ -14,8 +14,6 @@ Follow the same steps above and create SG, TG, ALB, ASG in another region (Examp
 
 ```sh
 #!/bin/bash
-sleep 30
-
 sudo yum update -y
 sudo yum install git httpd -y
 service httpd start
@@ -28,9 +26,6 @@ cp * -R /var/www/html/
 
 ```sh
 #!/bin/bash
-
-sleep 30
-
 sudo yum update -y
 sudo yum install git httpd -y
 service httpd start
