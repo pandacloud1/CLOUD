@@ -10,7 +10,7 @@
 
 Follow the same steps above and create SG, TG, ALB, ASG in another region (Example: Mumbai).
 
-### Installation Script (LoadBalancer-1)
+### Installation Script (Region-1)
 
 ```sh
 #!/bin/bash
@@ -24,7 +24,7 @@ git clone https://github.com/pandacloud1/webapp1.git && cd webapp1
 cp * -R /var/www/html/
 ```
 
-### Installation Script (LoadBalancer-2)
+### Installation Script (Region-2)
 
 ```sh
 #!/bin/bash
