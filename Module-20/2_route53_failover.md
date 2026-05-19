@@ -16,7 +16,7 @@ Follow the same steps above and create SG, TG, ALB, ASG in another region (Examp
 #!/bin/bash
 sudo yum update -y
 sudo yum install git httpd -y
-service httpd start
+sudo service httpd start
 sudo chkconfig httpd on
 git clone https://github.com/pandacloud1/webapp1.git && cd webapp1
 sudo cp * -R /var/www/html/
