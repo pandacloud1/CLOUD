@@ -24,13 +24,7 @@
      - Min: `2`
      - Max: `2`
 
-Follow the same steps above and create:
-- SG
-- TG
-- ALB
-- ASG
-
-in another region (Example: Mumbai).
+Follow the same steps above and create SG, TG, ALB, ASG in another region (Example: Mumbai).
 
 # Installation Script (LoadBalancer-1)
 
