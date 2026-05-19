@@ -24,7 +24,7 @@ git clone https://github.com/pandacloud1/webapp1.git && cd webapp1
 cp * -R /var/www/html/
 ```
 
-# Installation Script (LoadBalancer-2)
+### Installation Script (LoadBalancer-2)
 
 ```sh
 #!/bin/bash
