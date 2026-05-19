@@ -2,8 +2,6 @@
 
 ```sh
 #!/bin/bash
-sleep 30
-
 sudo yum update -y
 sudo yum install git httpd -y
 sudo service httpd start
