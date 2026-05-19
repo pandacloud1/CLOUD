@@ -3,18 +3,14 @@
 ### Create the Following in One Region (Example: N. Virginia)
 
 1. Create Security Group (SG): Allow ports `22` and `80`
-
 2. Create Target Group (TG): Give a name, Set **Advanced health checks** to `minimum`
-
 3. Create Application Load Balancer (ALB)
-
 4. Create Launch Template: Select **Amazon Linux OS**, Add the script in **User data**
-
 5. Create Auto Scaling Group (ASG): Network: Choose `AZ-1a` and `AZ-1b`; Attach to existing Load Balancer; Group size: Desired: `2`, Min: `2`, Max: `2`
 
 Follow the same steps above and create SG, TG, ALB, ASG in another region (Example: Mumbai).
 
-# Installation Script (LoadBalancer-1)
+### Installation Script (LoadBalancer-1)
 
 ```sh
 #!/bin/bash
