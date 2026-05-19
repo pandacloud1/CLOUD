@@ -41,7 +41,6 @@ cp * -R /var/www/html/
 ```
 
 ## Route 53
-
 ### Create Health Check
 
 - Name: `<Give name>`
@@ -51,49 +50,12 @@ cp * -R /var/www/html/
 - Path: `/index.html`
 - `Create alarm: No` --> `Create health check`
 
-# Create Routing Policy (For LoadBalancer-1)
-Go to:
-```text
-Route53 --> Hosted zones --> Select your hosted zone
-```
+### Create Routing Policy (For LoadBalancer-1)
+- Route53 --> Hosted zones --> Select your hosted zone
+- Create record: name:  ```text  (www).example.com  ```; Select:  Alias; Endpoint:  Alias to Application & Classic Load Balancer; Region:  <region-1>
+- Routing policy: Failover
+- Failover type: Primary
 
-Click:
-```text
-Create record
-```
-
-### Record Configuration
-- Record name:
-  ```text
-  (www).example.com
-  ```
-
-- Select:
-  ```text
-  Alias
-  ```
-
-- Endpoint:
-  ```text
-  Alias to Application & Classic Load Balancer
-  ```
-
-- Region:
-  ```text
-  <region-1>
-  ```
-
-- Routing policy:
-  ```text
-  Failover
-  ```
-
-- Failover type:
-  ```text
-  Primary
-  ```
-
-## Note
 Follow the same steps above for `LoadBalancer-2`.
 
 The only change will be:
