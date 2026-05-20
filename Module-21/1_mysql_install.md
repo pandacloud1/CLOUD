@@ -2,7 +2,7 @@
 - REF: [https://dev.to/aws-builders/installing-mysql-on-amazon-linux-2023-1512]
 
 ### Installing mysql client
-- No need to install mysql server package as we are using RDS 
+- No need to install mysql server as we are using RDS 
 ```sh
 #!/bin/bash
 sudo wget https://dev.mysql.com/get/mysql80-community-release-el9-1.noarch.rpm
