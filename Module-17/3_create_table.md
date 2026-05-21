@@ -1,4 +1,8 @@
 ## ADDING ENTRIES IN DATABASE
+### Clear the screen
+```sh
+system clear;
+```
 
 ### Create a new database
 ```sh
