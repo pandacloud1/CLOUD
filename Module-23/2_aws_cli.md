@@ -2,7 +2,7 @@
 
 ## EC2 COMMANDS
 ### Create instance
-- <img id>: ami-0166fe664262f664c (Amazon_Linux-2)
+- img id: ami-0166fe664262f664c (Amazon_Linux-2)
 ```sh
 aws ec2 run-instances --image-id <img-id> --count <num> --instance-type <type> --key-name <Key-name> --security-groups <SG-name>
 ```
