@@ -1,4 +1,4 @@
-## AWS CLI COMMANDS
+# AWS CLI COMMANDS
 
 ## EC2 COMMANDS
 ### Create instance
