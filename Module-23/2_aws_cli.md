@@ -1,5 +1,8 @@
 # AWS CLI COMMANDS
 
+## AWS CLI INSTALLATION
+- Ref: [https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html#getting-started-install-instructions]
+
 ## EC2 COMMANDS
 ### Create instance
 - img id: ami-0166fe664262f664c (Amazon_Linux-2)
