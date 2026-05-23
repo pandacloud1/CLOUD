@@ -27,3 +27,21 @@ aws ec2 run-instances --image-id ami-0f3f13f145e66a0a3 --instance-type t2.micro 
 ```sh
 aws ec2 terminate-instances --instance-id <instance-id>
 ```
+
+## S3 CLI COMMANDS
+- REF: [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/create-bucket.html]
+
+### Create S3 bucket
+```sh
+aws s3api create-bucket --bucket <bucket-name> --region us-east-1
+```
+
+### Empty S3 bucket
+```sh
+aws s3 rm s3://<bucket-name> --recursive
+```
+
+### Delete S3 bucket
+```sh
+aws s3api delete-bucket --bucket <bucket-name> --region us-east-1
+```
