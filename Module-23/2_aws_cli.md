@@ -28,6 +28,7 @@ aws ec2 run-instances --image-id ami-0f3f13f145e66a0a3 --instance-type t2.micro 
 aws ec2 terminate-instances --instance-id <instance-id>
 ```
 
+---
 ## S3 CLI COMMANDS
 - REF: [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/create-bucket.html]
 
