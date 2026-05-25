@@ -23,7 +23,7 @@ aws ec2 terminate-instances --instance-ids <InstanceId>
 ### EXAMPLES:
 ### CREATE EC2 USING CLI
 ```sh
-aws ec2 run-instances --image-id ami-0f3f13f145e66a0a3 --instance-type t2.micro --key-name Linux-key --security-groups Linux-SG
+aws ec2 run-instances --image-id ami-0236922087fa98b6e --instance-type t2.micro --key-name Linux-key --security-groups Linux-SG
 ```
 
 ### TERMINATE EC2 USING CLI
