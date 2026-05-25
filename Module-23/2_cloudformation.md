@@ -6,6 +6,7 @@
 ## CREATE EC2 INSTANCE
 - SELECT REGION: `N.Virginia`
 - Below code will create `EC2 instance` along with a `Security group`
+- Save the below code as a `file.yaml` in your local machine to upload it to CloudFormation
 
 ```yaml
 Resources:
