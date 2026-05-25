@@ -11,11 +11,16 @@ aws ec2 run-instances --image-id <img-id> --count <num> --instance-type <type> -
 ```
 
 ### Describe instances
+Get the instance id
+```sh
+aws ec2 describe-instances 
+```
 ```sh
 aws ec2 describe-instances --filters Name=instance-state-name,Values=running --output table
 ```
 
-### Terminate instances
+### Terminate instances 
+Terminate EC2 based on instance id
 ```sh
 aws ec2 terminate-instances --instance-ids <InstanceId>
 ```
