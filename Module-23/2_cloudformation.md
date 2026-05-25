@@ -27,11 +27,17 @@ Resources:
     Type: AWS::EC2::Instance
     Properties:
       InstanceType: t2.micro
-      ImageId: ami-0dc3a08bd93f84a35  # Amazon Linux 2 AMI
+      ImageId: ami-0236922087fa98b6e  # Amazon Linux 2023
       SecurityGroupIds:
         - !Ref MySecurityGroup
       KeyName: Linux-key              # Your key pair name
       Tags:
         - Key: Name
           Value: MyServer
+```
+
+## DELETE EC2 INSTANCE
+- Delete EC2 instance after Lambda practical
+```txt
+CloudFormation → Select Stack → Delete
 ```
