@@ -4,7 +4,7 @@
 - Ref: [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-template-resource-type-ref.html]
 
 ## CREATE EC2 INSTANCE
-- SELECT REGION: N VIRGINIA
+- SELECT REGION: `N.Virginia`
 - Below code will create `EC2 instance` along with a `Security group`
 
 ```yaml
