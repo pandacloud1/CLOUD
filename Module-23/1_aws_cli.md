@@ -5,7 +5,7 @@
 
 ## EC2 COMMANDS
 ### Create instance
-- img id: ami-0236922087fa98b6e (Amazon_Linux-2023)
+- img id: `ami-0236922087fa98b6e` (Amazon_Linux-2023)
 ```sh
 aws ec2 run-instances --image-id <img-id> --count <num> --instance-type <type> --key-name <Key-name> --security-groups <SG-name>
 ```
