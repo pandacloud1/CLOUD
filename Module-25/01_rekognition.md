@@ -30,6 +30,10 @@ Keep all the settings as default
 
 
 ### IDENTIFY IMAGE LABELS
+- Code explanation:
+  - Image is uploaded to S3
+  - Lambda function automatically sends the image to Amazon Rekognition, extracts detected labels
+  - Results are stored in DynamoDB table.
 ```py
 import boto3
 import json
