@@ -7,18 +7,18 @@
 Keep all the settings as default
 
 ### 2. Create DynamoDB table
-Give name & Partition key: `ImageName` --> Create table
+Give name & Partition key: `ImageName` → Create table
 
 ### 3. Create Lambda
-- Give name, Add Runtime: Python 3.9 & add below code --> DEPLOY
+- Give name, Add Runtime: Python 3.9 & add below code → DEPLOY
 - In the code, update the DynamoDB table name
-- Increase execution time: Lambda --> General configuration --> Timout settings --> Change to 30 secs
-- Add permissions in the role: Lambda function --> Configuration --> Open the default role created --> Attach policies --> Add below
+- Increase execution time: Lambda → General configuration → Timout settings → Change to `30 secs`
+- Add permissions in the role: Lambda function → Configuration → Open the default role created → Attach policies → Add below
   - RekognitionFullAccess
   - DynamoDBFullAccess
   - S3ReadOnlyAccess
 
-- Now add trigger for S3: Lambda --> Add trigger --> Source: S3 --> Select bucket --> Keep all default --> Acknowledge --> Create trigger
+- Now add trigger for S3: Lambda → Add trigger → Source: S3 → Select bucket → Keep all default → Acknowledge → Create trigger
 
 ### 4. Testing
 - Upload some images from your system, wait for sometime, the results will get populated in DynamoDB table.
