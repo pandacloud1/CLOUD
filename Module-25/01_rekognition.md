@@ -1,6 +1,7 @@
 ## AMAZON REKOGNITION HANDS-ON
 - Image Analysis Using Amazon Rekognition, Lambda, S3 & DynamoDB
-<img width="1132" height="631" alt="image" src="https://github.com/user-attachments/assets/9b9da9dd-5f69-465f-84e0-7a4730164bff" />
+- We have two codes, one for image labels and other for celebrity recognition
+<img width="679" height="323" alt="image" src="https://github.com/user-attachments/assets/ed607f2c-7f15-4015-af53-ea253f511152" />
 
 ### 1. Create a S3 bucket
 Keep all the settings as default
