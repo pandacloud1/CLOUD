@@ -7,17 +7,17 @@
 Keep all the settings as default
 
 ### 2. Create DynamoDB table
-Give name & Partition key: `ImageName` → Create table
+- Give name: `rekognition-table`
+- Partition key: `ImageName` → Create table
 
 ### 3. Create Lambda
-- Give name, Add Runtime: Python 3.9 & add below code → DEPLOY
-- In the code, update the DynamoDB table name
-- Increase execution time: Lambda → General configuration → Timout settings → Change to `30 secs`
+- Give name: `rekognition-lambda`, Add Runtime: `Python 3.14` or `latest` & add below given code → `DEPLOY`
+- In the code, update the DynamoDB table name to `rekognition-table`
+- Increase execution time: Lambda → Configuration → Timeout settings → Change to `30 secs`
 - Add permissions in the role: Lambda function → Configuration → Open the default role created → Attach policies → Add below
   - RekognitionFullAccess
   - DynamoDBFullAccess
   - S3ReadOnlyAccess
-
 - Now add trigger for S3: Lambda → Add trigger → Source: S3 → Select bucket → Keep all default → Acknowledge → Create trigger
 
 ### 4. Testing
@@ -26,6 +26,7 @@ Give name & Partition key: `ImageName` → Create table
   - type: Food
   - Confidence: 99%
   - category
+  - Celebrity info
 
 
 ### IDENTIFY IMAGE LABELS
