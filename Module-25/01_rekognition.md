@@ -35,21 +35,25 @@ Keep all the settings as default
   - Lambda function automatically sends the image to Amazon Rekognition, extracts detected labels
   - Results are stored in DynamoDB table.
 ```py
+# boto3 is official AWS library for Python
 import boto3
 import json
 
+# AWS automatically calls this function when the Lambda is triggered
 def lambda_handler(event, context):
-    # Initialize clients
+    # Initialize clients (AWS connection points)
     s3_client = boto3.client('s3')
     rekognition_client = boto3.client('rekognition')
     dynamodb = boto3.resource('dynamodb')
+    # Connect to DynamoDB Table
     table = dynamodb.Table('rekognition-table')  # Replace with your table name
 
+    # Read S3 Event Information
     # Get the S3 bucket name and object key from the event
     bucket_name = event['Records'][0]['s3']['bucket']['name']
     object_key = event['Records'][0]['s3']['object']['key']
 
-    # Call Amazon Rekognition to detect labels in the image
+    # Call Amazon Rekognition (to detect labels in the image)
     response = rekognition_client.detect_labels(
         Image={'S3Object': {'Bucket': bucket_name, 'Name': object_key}},
         MaxLabels=10
@@ -63,7 +67,7 @@ def lambda_handler(event, context):
             'Labels': json.dumps(labels)
         }
     )
-
+    # Return Success Message
     return {
         'statusCode': 200,
         'body': json.dumps('Image processed successfully!')
