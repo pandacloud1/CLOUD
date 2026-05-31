@@ -5,7 +5,7 @@
 - In real time, use CloudFront to add S3 as origin, so that you do not need to create a public bucket
 
 ### Architecture
-<img width="1212" height="404" alt="image" src="https://github.com/user-attachments/assets/cf59823d-4930-42bd-825b-42049c50cb12" />
+<img width="606" height="202" alt="image" src="https://github.com/user-attachments/assets/cf59823d-4930-42bd-825b-42049c50cb12" />
 
 ### Step 1: Create S3 Bucket for Static Website
 - S3 → Allow Public Access → Create Bucket
