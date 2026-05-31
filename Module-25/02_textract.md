@@ -76,6 +76,7 @@ https://nqy12gcem5.execute-api.us-east-1.amazonaws.com
 ### Step 4: Create Frontend Website
 - Create a file: `index.html`
 - Add below code → Make the index.html file public using ACL
+- Replace `<YOUR_API_GATEWAY_URL>` with API Gateway Invoke URL
 ```html
 <!DOCTYPE html>
 <html>
