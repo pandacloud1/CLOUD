@@ -1,5 +1,5 @@
-## AMAZON REKOGNITION HANDS-ON
-- Image Analysis Using Amazon Rekognition, Lambda, S3 & DynamoDB
+## AMAZON REKOGNITION 
+- This hands-on is used to do image analysis using Amazon Rekognition, Lambda, S3 & DynamoDB
 - We have two codes, one for image labels and other for celebrity recognition
 <img width="679" height="323" alt="image" src="https://github.com/user-attachments/assets/ed607f2c-7f15-4015-af53-ea253f511152" />
 
