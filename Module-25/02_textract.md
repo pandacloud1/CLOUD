@@ -67,7 +67,7 @@ def lambda_handler(event, context):
   - Access-Control-Allow-Headers: `Content-Type`
   - Access-Control-Allow-Methods: `POST` & `OPTIONS`
 - Get Invoke URL: API Gateway → Stages → $default
-- Copy the Invoke URL & add it in S3 index.html file with `/extract` as suffix.
+- Copy the Invoke URL & add it in S3 `index.html` file with `/extract` as suffix.
 ```text
 # Example
 https://nqy12gcem5.execute-api.us-east-1.amazonaws.com
