@@ -1,7 +1,5 @@
-
-
-# AWS Textract 
-- Extract text from image using S3 Static Website, API Gateway, Lambda and Textract
+# AMAZON TEXTRACT
+- This hands-on is used to extract text from image using S3 Static Website, API Gateway, Lambda and Textract
 - In real time, use CloudFront to add S3 as origin, so that you do not need to create a public bucket
 
 ### Architecture
