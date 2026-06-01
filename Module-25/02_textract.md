@@ -58,8 +58,7 @@ def lambda_handler(event, context):
 ### Step 3: Create API Gateway
 - API Gateway → Create API → HTTP API
 - API Gateway → Integrations → Integration Type: Lambda → Function: <Add your Lambda function>
-- Create Route: API Gateway → Routes → Method: POST → Path: /extract
-- Attach the Lambda integration.
+- Create Route: API Gateway → Routes → Method: POST → Path: /extract → Attach the Lambda integration.
 - Configure CORS: API Gateway → CORS
   - Access-Control-Allow-Origin: `*`
   - Access-Control-Allow-Headers: `Content-Type`
