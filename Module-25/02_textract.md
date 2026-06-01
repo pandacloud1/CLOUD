@@ -107,7 +107,7 @@ async function extractText(){
         const base64 =
             reader.result.split(',')[1];
 
-        ## ADD YOUR API INVOKE URL HERE
+        // ADD YOUR API INVOKE URL HERE
         const response =
             await fetch(
             '<YOUR_API_GATEWAY_URL>/extract',
