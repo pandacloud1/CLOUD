@@ -1,7 +1,6 @@
 ## AMAZON TEXTRACT
-- This hands-on is used to create a static website
-- Whenever user adds an `English` text, then it will translate it to `Hindi`
-- In the backend API Gateway is configured to trigger Lambda
+- This hands-on is used to create a website to translate `English` to `Hindi`
+- Website is created using S3. In the backend, API Gateway is configured to trigger Lambda
 - Lambda will get the translation done using Amazon Translate
 
 ### STEP1: CREATE LAMBDA
