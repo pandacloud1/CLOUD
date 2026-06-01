@@ -44,6 +44,7 @@ def lambda_handler(event, context):
 - Test event JSON
 - Replace the `<instance-ID>` below with your EC2 instance id
 - Change Configuration -> General configuration -> Edit -> Change timeout settings to `2 mins`
+- Change Configuration -> Attach `EC2FullAccess` policy to Lambda IAM role
 ```json
 {"instanceId": "<instance-ID>"}
 ```
