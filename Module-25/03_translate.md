@@ -1,4 +1,4 @@
-## AMAZON TEXTRACT
+## AMAZON TRANSLATE
 - This hands-on is used to create a website to translate `English` to `Hindi`
 - Website is created using S3. In the backend, API Gateway is configured to trigger Lambda
 - Lambda will get the translation done using Amazon Translate
