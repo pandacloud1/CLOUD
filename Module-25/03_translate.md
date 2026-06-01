@@ -3,7 +3,7 @@
 - Website is created using S3. In the backend, API Gateway is configured to trigger Lambda
 - Lambda will get the translation done using Amazon Translate
 
-### Step1: Create Lambda
+### Step 1: Create Lambda
 - Configuration: Timeout: `30 sec`
 - Permissions: IAM Role: Add policies: `TranslateFullAccess`
 ```python
@@ -34,7 +34,7 @@ def lambda_handler(event, context):
     }
 ```
 
-### Step2: Create API Gateway
+### Step 2: Create API Gateway
 - Integration: `<Add Lambda function>`
 - Route: `POST /textract`
 - CORS:
@@ -43,7 +43,7 @@ def lambda_handler(event, context):
   - Allow Methods: `POST` & `OPTIONS`
 - Copy `<API-Invoke-URL>` and use it in your `index.html` file
 
-### Step3: Create S3 bucket (for Website)
+### Step 3: Create S3 bucket (for Website)
 - Create a public bucket and allow ACL
 - Create `index.html` file & add `<API-Invoke-URL>` & upload the file
 - Make `index.html` file public using ACL
