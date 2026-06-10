@@ -15,7 +15,7 @@
   - Subnet: `Create new with different CIDR than VM`
  
 - Step2: Create Frontends
-  - Add new --> Give name --> Create address
+  - Add new --> Give name --> `Create address`
 
 - Step3: Create Backend pool
   - Add backend pool --> Give name
