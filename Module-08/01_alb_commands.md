@@ -14,8 +14,7 @@ sudo echo "WELCOME TO SERVER NO. $(hostname -i)" > /var/www/html/index.html
 ### COMMANDS FOR UBUNTU
 - REF: [https://www.digitalocean.com/community/tutorials/how-to-install-the-apache-web-server-on-ubuntu-22-04]
 ```sh
-#!/bin/bash									
-sudo su -									
+#!/bin/bash
 apt update -y
 apt install apache2 -y
 service apache2 start
