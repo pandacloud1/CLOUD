@@ -1,7 +1,12 @@
 ## RUNNING STRESS COMMAND
 - Stress is already installed using custom data
-- Run this command in both VMs part of your VMSS
-
+- Run this command in both VMs part of your VMSS to increase the CPU
+### Increase CPU using stress package
+```sh
+stress --cpu 400
+```
+- You can directly upload the key in MobaXterm or use below steps for pem key creation
+  
 ### Create pem key in VM
 ```sh
 vi <key-name>.pem
@@ -18,10 +23,6 @@ chmod 7000 <key-name>.pem
 sudo ssh -i <key-name>.pem azureuser@<private-ip>
 ```
 
-### Increase CPU using stress package
-```sh
-stress --cpu 400
-```
-
+Note:
 - Wait for 5-10 mins & check `Percentage CPU` from VMSS --> Monitoring --> Metrics
 - Also the email notifications must be triggered if CPU crosses the threshould
