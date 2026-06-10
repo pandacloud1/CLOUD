@@ -1,9 +1,9 @@
 ## RUNNING STRESS COMMAND
 - Stress is already installed using custom data
 - Run this command in both VMs part of your VMSS to increase the CPU
-```sh
-stress --cpu 400
-```
+  ```sh
+  stress --cpu 400
+  ```
 - You can directly upload the key in MobaXterm or use below steps for pem key creation
   
 ### Create pem key in VM
