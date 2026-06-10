@@ -1,7 +1,6 @@
 ## RUNNING STRESS COMMAND
 - Stress is already installed using custom data
 - Run this command in both VMs part of your VMSS to increase the CPU
-### Increase CPU using stress package
 ```sh
 stress --cpu 400
 ```
