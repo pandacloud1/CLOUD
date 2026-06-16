@@ -40,12 +40,7 @@ mysql -u root -p
 system clear;
 ```
 
-### Create a new database
-```sh
-CREATE DATABASE my_database;
-```
-
-### Switch to the newly created database, create table & add entries
+### Create a new database, switch to the newly created database, create table & add entries
 ```sh
 CREATE DATABASE my_database;
 USE my_database;
