@@ -9,6 +9,7 @@ sudo ACCEPT_EULA=Y apt-get install -y mssql-tools unixodbc-dev
 echo 'export PATH="$PATH:/opt/mssql-tools/bin"' >> ~/.bashrc
 source ~/.bashrc
 sqlcmd -S <Server-name> -U <username> -P <password>
+# You can get the <Server-name> from Azure SQL --> SQL database: <Open your DB> --> Get the <Server-name>
 ```
 
 ### Webserver script
