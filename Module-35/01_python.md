@@ -65,6 +65,8 @@ dictt = {
 
 print(type(dictt))
 ```
+<img width="166" height="175" alt="image" src="https://github.com/user-attachments/assets/9468737f-ab70-4e99-a943-0ee277de5d32" />
+
 
 ## Variables
 * Variables are used to store values
