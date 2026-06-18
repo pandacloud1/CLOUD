@@ -80,9 +80,7 @@ print(type(dictt))
 * Variables are case-sensitive
 * Do not use standard Python keywords (e.g., `if`, `else`, `for`, `while`)
 
-## Typecasting in Python
-* It is used to convert one data type into another
-
+## Converting datatype in Python
 ### Example: String to Integer
 
 ```py
