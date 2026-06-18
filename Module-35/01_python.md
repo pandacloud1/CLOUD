@@ -33,8 +33,6 @@
 * Set          → `{1, 2, 3, 4}`
 * Dictionary   → `{"name": "panda", "age": 5}`
 
-<img width="405" height="460" alt="image" src="https://github.com/user-attachments/assets/9cb95642-d672-49f8-8cbc-f5312f34c11c" />
-
 ## Python data types testing using code
 ```py
 name = "panda"
