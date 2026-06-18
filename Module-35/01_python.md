@@ -24,14 +24,14 @@
 * Top → Search → `>Developer: Toggle Screencast Mode` → Shows keyboard shortcuts on screen
 
 ## Python Data Types
-* `string`       → `name = "Panda"`
-* `integer`      → `age = 5` (Note: numbers inside quotes become strings)
-* `float`        → `version = 1.2`
-* `boolean`      → `is_completed = True / False` (First letter uppercase, no quotes)
-* `list`         → `[1, 2, 3, 4]` (changeable)
-* `tuple`        → `(1, 2, 3, 4)` (fixed / immutable)
-* `set`          → `{1, 2, 3, 4}`
-* `dictionary`   → `{"name": "panda", "age": 5}`
+* String       → `name = "Panda"`
+* Integer      → `age = 5` (Note: numbers inside quotes become strings)
+* Float        → `version = 1.2`
+* Boolean      → `is_completed = True / False` (First letter uppercase, no quotes)
+* List         → `[1, 2, 3, 4]` (changeable)
+* Tuple        → `(1, 2, 3, 4)` (fixed / immutable)
+* Set          → `{1, 2, 3, 4}`
+* Dictionary   → `{"name": "panda", "age": 5}`
 
 <img width="405" height="460" alt="image" src="https://github.com/user-attachments/assets/9cb95642-d672-49f8-8cbc-f5312f34c11c" />
 
