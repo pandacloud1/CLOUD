@@ -37,10 +37,9 @@
 * The `input()` function is used to take input from the user
 * By default, input is treated as a **string**
 
-<img width="446" height="191" alt="image" src="https://github.com/user-attachments/assets/f6482c73-c0b5-4e30-b92b-62f0871214f8" />
-
 ## Script output
 * The `print()` function is used to provide output of the script
+<img width="446" height="191" alt="image" src="https://github.com/user-attachments/assets/f6482c73-c0b5-4e30-b92b-62f0871214f8" />
 
 ## Python data types testing using code
 ```py
