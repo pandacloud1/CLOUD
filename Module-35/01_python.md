@@ -27,7 +27,7 @@
 * String       → `name = "Panda"`
 * Integer      → `age = 5` (Note: numbers inside quotes become strings)
 * Float        → `version = 1.2`
-* Boolean      → `is_completed = True / False` (First letter uppercase, no quotes)
+* Boolean      → `True / False` (First letter uppercase, no quotes)
 * List         → `[1, 2, 3, 4]` (changeable / mutable)
 * Tuple        → `(1, 2, 3, 4)` (fixed / immutable)
 * Set          → `{1, 2, 3, 4}`
