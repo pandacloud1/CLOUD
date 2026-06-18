@@ -65,10 +65,56 @@ print(type(dictt))
 ```
 <img width="166" height="175" alt="image" src="https://github.com/user-attachments/assets/9468737f-ab70-4e99-a943-0ee277de5d32" />
 
-
 ## Variables
 * Variables are used to store values
 * Variables can include letters, underscores, and numbers
 * They cannot start with a number
 * Variables are case-sensitive
 * Do not use standard Python keywords (e.g., `if`, `else`, `for`, `while`)
+  
+## Typecasting in Python
+* It is used to convert one data type into another
+
+### Example: String to Integer
+
+```py
+a = "5"
+print(type(a))   # Output: <class 'str'>
+b = int(a)
+print(type(b))   # Output: <class 'int'>
+```
+
+### Example: Integer to String
+
+```py
+a = 5
+b = str(a)
+```
+
+## Why Typecasting is Required?
+- The below program which is a bit lengthy
+<img width="445" height="313" alt="image" src="https://github.com/user-attachments/assets/4cbb3b3d-3055-4034-bdeb-7499ae50a9e0" />
+
+- It will get simplified by using typecasting
+<img width="450" height="112" alt="image" src="https://github.com/user-attachments/assets/0df11fb8-c2ca-4a82-bf6a-c26012523aff" />
+
+## User Input
+* The `input()` function is used to take input from the user
+* By default, input is treated as a **string**
+
+<img width="446" height="191" alt="image" src="https://github.com/user-attachments/assets/f6482c73-c0b5-4e30-b92b-62f0871214f8" />
+
+## Using New Lines & Tabs
+
+* `\n` → New line
+* `\t` → Tab space
+<img width="450" height="152" alt="image" src="https://github.com/user-attachments/assets/63b00c11-8de9-44bc-927f-3af98b00f9f5" />
+
+## Print Formatting
+
+* By default, **space** is used as a separator in `print()`
+* You can change the separator using `sep`
+* Use `end` to control what prints at the end of the line
+* Use `end=""` to avoid moving output to the next line
+
+<img width="600" height="164" alt="image" src="https://github.com/user-attachments/assets/8b1d5cdc-8522-44ad-894e-7652a6c2c76e" />
