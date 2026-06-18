@@ -1,6 +1,6 @@
 # PYTHON
 
-## Setup Python
+## Install Python
 * Install VS Code: [https://code.visualstudio.com/download](https://code.visualstudio.com/download)
 * Install Python: [https://www.python.org/downloads/](https://www.python.org/downloads/)
 * Create a file with a `.py` extension (e.g., `test.py`)
