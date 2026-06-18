@@ -22,3 +22,22 @@
 * Modify multiple texts together: Click on text → Hold `Alt` and click on another text → Edit both simultaneously
 * Settings → Settings → Commonly Used → **Editor: Mouse Wheel Zoom** → Enable it to zoom files using `Ctrl + Mouse Wheel` or `Touchpad`
 * Top → Search → `>Developer: Toggle Screencast Mode` → Shows keyboard shortcuts on screen
+
+## Python Data Types
+* `string`       → `name = "Panda"`
+* `integer`      → `age = 5` (Note: numbers inside quotes become strings)
+* `float`        → `version = 1.2`
+* `boolean`      → `is_completed = True / False` (First letter uppercase, no quotes)
+* `list`         → `[1, 2, 3, 4]` (changeable)
+* `tuple`        → `(1, 2, 3, 4)` (fixed / immutable)
+* `set`          → `{1, 2, 3, 4}`
+* `dictionary`   → `{"name": "panda", "age": 5}`
+
+<img width="405" height="460" alt="image" src="https://github.com/user-attachments/assets/9cb95642-d672-49f8-8cbc-f5312f34c11c" />
+
+## Variables
+* Variables are used to store values
+* Variables can include letters, underscores, and numbers
+* They cannot start with a number
+* Variables are case-sensitive
+* Do not use standard Python keywords (e.g., `if`, `else`, `for`, `while`)
