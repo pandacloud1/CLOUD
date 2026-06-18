@@ -33,6 +33,15 @@
 * Set          → `{1, 2, 3, 4}`
 * Dictionary   → `{"name": "panda", "age": 5}`
 
+## User Input
+* The `input()` function is used to take input from the user
+* By default, input is treated as a **string**
+
+<img width="446" height="191" alt="image" src="https://github.com/user-attachments/assets/f6482c73-c0b5-4e30-b92b-62f0871214f8" />
+
+## Script output
+* The `print()` function is used to provide output of the script
+
 ## Python data types testing using code
 ```py
 name = "panda"
@@ -71,7 +80,7 @@ print(type(dictt))
 * They cannot start with a number
 * Variables are case-sensitive
 * Do not use standard Python keywords (e.g., `if`, `else`, `for`, `while`)
-  
+
 ## Typecasting in Python
 * It is used to convert one data type into another
 
@@ -97,12 +106,6 @@ b = str(a)
 
 - It will get simplified by using typecasting
 <img width="450" height="112" alt="image" src="https://github.com/user-attachments/assets/0df11fb8-c2ca-4a82-bf6a-c26012523aff" />
-
-## User Input
-* The `input()` function is used to take input from the user
-* By default, input is treated as a **string**
-
-<img width="446" height="191" alt="image" src="https://github.com/user-attachments/assets/f6482c73-c0b5-4e30-b92b-62f0871214f8" />
 
 ## Using New Lines & Tabs
 
