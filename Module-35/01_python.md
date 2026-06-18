@@ -35,6 +35,37 @@
 
 <img width="405" height="460" alt="image" src="https://github.com/user-attachments/assets/9cb95642-d672-49f8-8cbc-f5312f34c11c" />
 
+## Python data types testing using code
+```py
+name = "panda"
+print(type(name))
+
+num = 123
+print(type(num))
+
+pi = 3.142
+print(type(pi))
+
+out = True
+print(type(out))
+
+item = ['milk', 'eggs']
+print(type(item))
+
+cards = {'ace', 'king', 'queen'}
+print(type(cards))
+
+gift = ('chocolate', 'honey', 'greentea')
+print(type(gift))
+
+dictt = { 
+    'bank': ['finance', 'river edge'], 
+    'bat': ['animal', 'sports equipment']
+}
+
+print(type(dictt))
+```
+
 ## Variables
 * Variables are used to store values
 * Variables can include letters, underscores, and numbers
