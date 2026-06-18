@@ -14,3 +14,14 @@
 * Use 4 spaces for indentation, do not use TAB
 * Max 79 characters allowed per line
 * Use `#` for short comments & `"""` for long comments (docstring)
+
+## VS Code Shortcuts
+* `Ctrl + /` → Comment/uncomment lines
+* Use `Ctrl + ]` to indent & `Ctrl + [` to unindent
+* `Alt + Shift + Down Arrow` → Duplicate the current line
+* Modify multiple texts together: Click on text → Hold `Alt` and click on another text → Edit both simultaneously
+* Settings → Settings → Commonly Used → **Editor: Mouse Wheel Zoom**
+
+  * Enable it to zoom files using `Ctrl + Mouse Wheel` or `Touchpad`
+* Top → Search → `>Developer: Toggle Screencast Mode`
+   * Shows keyboard shortcuts on screen
