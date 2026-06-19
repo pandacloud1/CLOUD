@@ -143,4 +143,4 @@ FloorDiv/Quotient(int) 12
 Modulus/Remainder 1
 Exponential/Square 625
 ```
-<img width="216" height="121" alt="image" src="https://github.com/user-attachments/assets/5f6996a9-1120-4f4b-9b3a-a915b11c42a9" />
+<img width="432" height="242" alt="image" src="https://github.com/user-attachments/assets/5f6996a9-1120-4f4b-9b3a-a915b11c42a9" />
