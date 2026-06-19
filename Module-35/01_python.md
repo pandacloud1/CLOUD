@@ -130,6 +130,7 @@ print("Sub", a-b)
 print("Mult", a*b)
 print("Div/Quotient(decimal)", a/b)
 print("FloorDiv/Quotient(int)", a//b)
+print("OnlyDecimal",a/b/a)
 print("Modulus/Remainder", a%b)
 print("Exponential/Square", a**b)
 ```
