@@ -105,13 +105,14 @@ b = str(a)
 <img width="450" height="112" alt="image" src="https://github.com/user-attachments/assets/0df11fb8-c2ca-4a82-bf6a-c26012523aff" />
 
 ## Using New Lines & Tabs
-
-* `\n` → New line
-* `\t` → Tab space
+* `\n`: new line
+* `\t`: tab
+* `\\`: backslash
+* `\"`: Double quotes
+* `\'`: Single quote
 <img width="450" height="152" alt="image" src="https://github.com/user-attachments/assets/63b00c11-8de9-44bc-927f-3af98b00f9f5" />
 
 ## Print Formatting
-
 * By default, **space** is used as a separator in `print()`
 * You can change the separator using `sep`
 * Use `end` to control what prints at the end of the line
