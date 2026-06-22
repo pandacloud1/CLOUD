@@ -67,3 +67,15 @@ print(fruits)
 ```sh
 ['apple', 'cherry']
 ```
+
+### (count): Count all occurences of an item
+```py
+fruits = ["apple", "banana", "cherry","banana","banana"]
+
+number = fruits.count("banana")
+print(number)
+```
+##### Output
+```sh
+3
+```
