@@ -6,7 +6,7 @@ fruits = ["apple", "banana", "cherry","banana","banana"]
 fruits.remove("banana")
 print(fruits)
 ```
-#### Output
+##### Output
 ```sh
 ['apple', 'cherry', 'banana', 'banana']
 ```
@@ -18,7 +18,7 @@ while "banana" in fruits:
     fruits.remove("banana")
 print(fruits)
 ```
-#### Output
+##### Output
 ```sh
 ['apple', 'cherry']
 ```
