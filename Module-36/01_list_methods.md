@@ -1,4 +1,4 @@
-## LIST METHODS
+# LIST METHODS
 
 ### (append): Add item at the end of list
 ```py
