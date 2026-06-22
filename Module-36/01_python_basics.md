@@ -74,8 +74,34 @@ fruits = ["apple", "banana", "cherry","banana","banana"]
 
 number = fruits.count("banana")
 print(number)
+
+# or
+# print(fruits.count("banana"))
 ```
 ##### Output
 ```sh
 3
+```
+
+### (sort): Sort items
+```py
+fruits = ["apple", "banana", "cherry","banana","banana"]
+
+fruits.sort()
+print(fruits)
+```
+##### Output
+```sh
+['apple', 'banana', 'banana', 'banana', 'cherry']
+```
+
+### (reverse): Reverse items
+```py
+fruits = ["apple", "banana", "cherry","dates","guava"]
+fruits.reverse()
+print(fruits)
+```
+##### Output
+```sh
+['guava', 'dates', 'cherry', 'banana', 'apple']
 ```
