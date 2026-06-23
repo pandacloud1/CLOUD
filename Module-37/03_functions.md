@@ -4,6 +4,13 @@
 - But with functions, you write the logic once and use it multiple times
 - You can save the logic in a separate file & use it in your main code using `from <logic-file> import <function-name>`
 
+## Why Functions?
+- Reusability	    You can call function anywhere in your program without rewriting the logic.
+- Readability	    The function instantly & clearly tells what the code does.
+- Maintainability	If you later change the logic (e.g., add validation or logging), you only update the function, not change every place you used the logic.
+- Scalability	    Functions make large programs modular — each part handles one task.
+- Testing	        You can easily test square() separately, which is great for debugging.
+
 Without a function: You’re repeating the same logic three times.
 ```py
 x = 5
