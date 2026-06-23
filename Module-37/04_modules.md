@@ -95,9 +95,9 @@ ec2 = boto3.client('ec2')
 
 # Create a new EC2 instance
 response = ec2.run_instances(
-    ImageId='ami-0abcdef1234567890',            # Replace with a valid AMI ID
+    ImageId='ami-0abcdef1234567890',   # Replace with a valid AMI ID
     InstanceType='t2.micro',          
-    KeyName='my-keypair',             # Replace with your key pair name
+    KeyName='my-keypair',              # Replace with your key pair name
 )
 
 print("Created instance:", response['Instances'][0]['InstanceId'])
