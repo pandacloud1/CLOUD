@@ -3,6 +3,8 @@
 - Without functions, you need to write logic repetitively
 - But with functions, you write the logic once and use it multiple times
 - You can save the logic in a separate file & use it in your main code using `from <logic-file> import <function-name>`
+- But mostly, writing the logic in a separate file is a practise followed in module.
+- So function is a small block of code & module is an entire file containing the complete logic
 
 ## Why Functions?
 - Reusability:	    You can call function anywhere in your program without rewriting the logic.
