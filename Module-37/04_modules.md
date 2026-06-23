@@ -84,3 +84,22 @@ r = requests.get("https://www.example.com")
 print(r.text)
 ```
 <img width="575" height="100" alt="image" src="https://github.com/user-attachments/assets/e34d5877-c260-4988-a29d-858ec6694077" />
+
+
+### Creating an EC2 using `boto3` module
+```py
+import boto3
+
+# Initialize EC2 client
+ec2 = boto3.client('ec2')
+
+# Create a new EC2 instance
+response = ec2.run_instances(
+    ImageId='ami-0abcdef1234567890',            # Replace with a valid AMI ID
+    InstanceType='t2.micro',          
+    KeyName='my-keypair',             # Replace with your key pair name
+)
+
+print("Created instance:", response['Instances'][0]['InstanceId'])
+
+```
