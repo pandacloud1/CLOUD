@@ -105,3 +105,15 @@ print(fruits)
 ```sh
 ['guava', 'dates', 'cherry', 'banana', 'apple']
 ```
+
+### (index): Get the index no of an item
+- We can fetch the index of an item
+- This is not possible with set
+```py
+fruits = ['apple', 'banana', 'cherry']
+print(fruits.index('banana'))
+```
+##### Output
+```sh
+1
+```
