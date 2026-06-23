@@ -30,21 +30,6 @@ print(square(10))
 print(square(25))
 ```
 
-You can save the function in a separate file & call it as below
-```py
-# File name: logic.py
-def square(num):
-    return num*num
-```
-```py
-# File name: main.py
-# Call the function from separate file
-from logic import square
-print(square(5))
-print(square(10))
-print(square(25))
-```
-
 ## Login System
 ```py
 user = input("Enter your username: ")
@@ -63,33 +48,6 @@ def login(user, password):
         return "Login Successful"
     else:
         return "Access Denied"
-
-# Call the function
-print (login(user, password))
-```
-
-You can store your functions & user credentials in a separate file
-```py
-# File name logic.py
-# Dictionary of users and passwords
-users = {
-    "admin": "1234",
-    "panda": "1234",
-    "nasir": "1234"
-}
-
-# Define the function
-def login(user, password):
-    if user in users and users[user] == password:
-        return "Login Successful"
-    else:
-        return "Access Denied"
-```
-```py
-File name: main.py
-from logic import login
-user = input("Enter your username: ")
-password = input("Enter your password: ")
 
 # Call the function
 print (login(user, password))
