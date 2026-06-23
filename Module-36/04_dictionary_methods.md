@@ -52,3 +52,24 @@ print(cloud)
 ```sh
 {'AWS': 'Amazon', 'Azure': 'Microsoft', 'GCP': 'Google', 'Salesforce': 'SF', 'OCI': 'Oracle'}
 ```
+
+### pop(x): To remove specific key-value & then print the output
+```py
+cloud = {"AWS": "Amazon", "Azure": "Microsoft", "GCP": "Google", "Salesforce": "SF"}
+cloud.pop("Salesforce")
+print(cloud)
+```
+##### Output
+```sh
+{'AWS': 'Amazon', 'Azure': 'Microsoft', 'GCP': 'Google'}
+```
+
+### Get key based on value
+- Dictionaries are designed for key → value lookups.
+- To get a key from a value, you need to search through `items` & use `for` loop.
+```py
+cloud = {"AWS": "Amazon", "Azure": "Microsoft", "GCP": "Google", "Salesforce": "CRM"}
+for key, value in cloud.items():
+    if value == "Amazon":
+        print(key)
+```
