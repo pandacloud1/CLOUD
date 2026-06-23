@@ -1,7 +1,7 @@
 # SET METHODS
-- It has set of unique items
+- It has set of unique unordered items (eg. deck of cards, list of clouds, languages, etc)
 - Even if duplicates are added, they will not be printed
-- You can filter items based on index
+- You cannot filter items based on index
 
 ### (add): Add items to set
 - Note that the items will be displayed in random order
