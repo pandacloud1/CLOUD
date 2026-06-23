@@ -44,3 +44,53 @@ print(square(5))
 print(square(10))
 print(square(25))
 ```
+
+## Login System
+```py
+user = input("Enter your username: ")
+password = input("Enter your password: ")
+
+# Dictionary of users and passwords
+users = {
+    "admin": "1234",
+    "panda": "1234",
+    "nasir": "1234"
+}
+
+# Define the function
+def login(user, password):
+    if user in users and users[user] == password:
+        return "Login Successful"
+    else:
+        return "Access Denied"
+
+# Call the function
+print (login(user, password))
+```
+
+You can store your functions & user credentials in a separate file
+```py
+# File name logic.py
+# Dictionary of users and passwords
+users = {
+    "admin": "1234",
+    "panda": "1234",
+    "nasir": "1234"
+}
+
+# Define the function
+def login(user, password):
+    if user in users and users[user] == password:
+        return "Login Successful"
+    else:
+        return "Access Denied"
+```
+```py
+File name: main.py
+from logic import login
+user = input("Enter your username: ")
+password = input("Enter your password: ")
+
+# Call the function
+print (login(user, password))
+```
