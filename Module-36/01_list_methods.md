@@ -117,3 +117,15 @@ print(fruits.index('banana'))
 ```sh
 1
 ```
+
+### (extend): Combine lists
+```py
+fruits1 = ['apple', 'banana', 'cherry']
+fruits2 = ['guava', 'grapes', 'strawberry']
+fruits1.extend(fruits2)
+print(fruits1)
+```
+##### Output
+```sh
+['apple', 'banana', 'cherry', 'guava', 'grapes', 'strawberry']
+```
