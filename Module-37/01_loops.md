@@ -62,6 +62,15 @@ while i<6:    # condition
     i+=1      # 2 3 4 5 6                # increment
 ```
 
+### Print odds numbers from 1-10
+```py
+i = 1
+while i < 10:
+    print (i)
+    i += 2
+```
+Output: 1, 3, 5, 7, 9
+
 ### Ask the user to enter a password until they enter the correct one
 ```py
 while True:
