@@ -74,10 +74,13 @@ Output: 1, 3, 5, 7, 9
 ### Ask the user to enter a password until they enter the correct one
 ```py
 while True:
-  prompt = input("Enter password: ")
-  if prompt == "pass":
-      print("Correct password")
-      break
+    prompt = input("Enter the password: ")
+
+    if prompt == "password":
+        print("Login successful")
+        break
+    else:
+        print("Incorrect password")
 ```
 
 ## Break, Continue & Pass
