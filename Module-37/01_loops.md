@@ -83,7 +83,7 @@ while True:
         print("Incorrect password")
 ```
 
-## Break, Continue & Pass
+## Break & Continue
 
 ### break
 ```py
@@ -104,12 +104,4 @@ for i in range(1, 11):
     if i < 6:
         continue    # skip nos less than 6 (nos from 6-10 will be printed)
     print(i)
-```
-
-### pass
-```py
-### Used when we want to use condition later
-i = 3
-if i==3:
-    pass  # do nothing
 ```
