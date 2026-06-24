@@ -98,13 +98,13 @@ Output (Number 6 and later have been skipped) <br>
 
 ### continue
 ```py
+# condition: yes --> loop
+# condition: no --> print
 for i in range(1, 11):
-    if i == 6:
-        continue    # '6' will be skipped
+    if i < 6:
+        continue    # skip nos less than 6 (nos from 6-10 will be printed)
     print(i)
 ```
-Output (Only '6' has been skipped) <br>
-<img width="177" height="140" alt="image" src="https://github.com/user-attachments/assets/8e57e37d-a96f-4a37-b7d3-d69539936677" />
 
 ### pass
 ```py
