@@ -111,6 +111,8 @@ print(f"There are {sum} vowels in this sentence")
 <img width="238" height="20" alt="image" src="https://github.com/user-attachments/assets/8763e4fe-6f04-4916-a7e3-a627b393db7f" />
 
 #### Check if palindrome or not
+Palindrome is where the word and its reverse are same
+Examples: Kayak, Level, Madam, Rotor, Civic, Stats
 ```py
 text = input("Enter any word: ")
 if text == text[::-1]:
