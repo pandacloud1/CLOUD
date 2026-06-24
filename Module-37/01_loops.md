@@ -17,7 +17,7 @@ You keep eating while you are hungry.
 You don’t know how many biscuits you’ll eat — depends on condition (hunger)
 
 while = condition controlled
-use case: User input, waiting, conditions
+use case: User input, waiting, conditions, infinite loop, etc
 ```
 
 
