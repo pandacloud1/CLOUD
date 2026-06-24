@@ -87,19 +87,20 @@ print(r.text)
 
 
 ### Creating an EC2 using `boto3` module
+- Install boto3 using command `pip install boto3`
+- If you have multiple python version, then ensure you install boto3 in correct version
 ```py
 import boto3
 
-# Initialize EC2 client
 ec2 = boto3.client('ec2')
 
-# Create a new EC2 instance
 response = ec2.run_instances(
-    ImageId='ami-0abcdef1234567890',   # Replace with a valid AMI ID
-    InstanceType='t2.micro',          
-    KeyName='my-keypair',              # Replace with your key pair name
+    ImageId='ami-08f44e8eca9095668',
+    InstanceType='t2.micro',
+    KeyName='Linux-key',
+    MinCount=1,
+    MaxCount=1
 )
 
 print("Created instance:", response['Instances'][0]['InstanceId'])
-
 ```
