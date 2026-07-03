@@ -55,29 +55,6 @@ def login(user, password):
 print (login(user, password))
 ```
 
-## FUNCTIONS
-- Functions help you to write your own code
-- You need to define the function & call it to execute
-- They are used for reusability & modularity
-- 'Return' can help you store values in a variable temporarily
-- Once values of variables & return are passed, function no longer stores the values
-- That is the reason you need to call function & not the variable inside it
-- Hence, variables inside function are called 'local variables'
-- Variables outside the function are called 'global variables', they can be accessed from everywhere
-- You can make local variable inside a function a global variable, by using 'global <var>'; but this is usually discouraged
-- You can use 'docstrings' to label your function & call them using "print(test.__doc__)"
-
-Global variables
-```py
-# Changing local variable to global variable
-def test():
-    global x    
-    x = 10
-    return x
-test()
-print(x)
-# Output: 10, this won't work for local variable 'x'
-```
 Doc string
 ```py
 def sum(a,b):
