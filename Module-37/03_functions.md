@@ -102,6 +102,7 @@ def area(l,w):
 print(area(30,40))
 ```
 ```txt
+# Output
 1200
 ```
 
