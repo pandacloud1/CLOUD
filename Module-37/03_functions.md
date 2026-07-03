@@ -75,15 +75,14 @@ sum(1,2,3)
 
 ### Divide function
 ```py
-a = int(input("Enter number 1: "))
-b = int(input("Enter number 2: "))
-def safe_divide(a, b):
+a = int(input("Enter num 1: "))
+b = int(input("Enter num 2: "))
+def div(a,b):
     if b==0:
-        print("Cannot divide by zero")
-        return None
-    else: 
+        return("Cannot divide my zero")
+    else:
         return(a/b)
-print(safe_divide(a,b))
+print(div(a,b))
 ```
 <img width="146" height="49" alt="image" src="https://github.com/user-attachments/assets/6b6939fe-f542-459a-907b-b24693f1fe13" />
 
@@ -95,17 +94,16 @@ print(full_name("Panda", "Cloud"))
 ```
 <img width="89" height="20" alt="image" src="https://github.com/user-attachments/assets/7e91a411-66a7-4bab-99db-af64e2983fc5" />
 
-### Calculate area of rectangle
+### Calculate area of square/rectangle
 ```py
-length = int(input("Enter length: "))
-width = int(input("Enter width: "))
-
-def calculate_area(length, width):
-    return(length*width)
-
-print(calculate_area(length, width))
+# Calculate area of square/rectangle
+def area(l,w):
+    return l*w
+print(area(30,40))
 ```
-<img width="125" height="49" alt="image" src="https://github.com/user-attachments/assets/59b1324b-eb75-4fc8-acf0-3b2306b7aad8" />
+```txt
+1200
+```
 
 ### Multiply function
 Using positional arguments
