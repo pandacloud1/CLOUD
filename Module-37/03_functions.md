@@ -176,6 +176,21 @@ print(fact(n))
 ```
 <img width="124" height="37" alt="image" src="https://github.com/user-attachments/assets/158f1747-fc51-4b57-a8bf-7e64909dc178" />
 
+### Countdown Timer
+```
+n = int(input("Enter the countdown start time: "))
+import time
+def countdown(n):
+    if n == 0:              # base case
+        print("Countdown Completed!")
+        return n
+    print(n)
+    time.sleep(1)           # pause for 1 second
+    countdown(n - 1)        # recursive call
+countdown(n)
+```
+<img width="230" height="186" alt="image" src="https://github.com/user-attachments/assets/96c4db20-bc5c-44d5-a213-285fc50a306d" />
+
 ### Recursive function - Sum of digits
 ```py
 n = int(input("Enter a multi-digit number: "))
