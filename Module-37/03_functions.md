@@ -203,13 +203,13 @@ print(sum_of_digits(n))
 """
 Explanation
 sum_of_digits(123)  
-= 3 + sum_of_digits(12)  
-= 3 + (2 + sum_of_digits(1))  
-= 3 + (2 + (1 + sum_of_digits(0)))  
-= 3 + (2 + (1 + 0))  
-= 3 + (2 + 1)  
-= 3 + 3  
-= 6
+= 3 + sum_of_digits(12)              # store value
+= 3 + (2 + sum_of_digits(1))         # store value
+= 3 + (2 + (1 + sum_of_digits(0)))   # store value
+= 3 + (2 + (1 + 0))                  # store value
+= 3 + (2 + 1)                        # store value
+= 3 + 3                              
+= 6                                  # print value
 """
 ```
 <img width="259" height="34" alt="image" src="https://github.com/user-attachments/assets/6df268d1-fe35-48e5-b346-b6e77c1875e6" />
