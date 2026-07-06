@@ -32,30 +32,7 @@ print(square(10))
 print(square(25))
 ```
 
-## Login System
-```py
-user = input("Enter your username: ")
-password = input("Enter your password: ")
-
-# Dictionary of users and passwords
-users = {
-    "admin": "1234",
-    "panda": "1234",
-    "nasir": "1234"
-}
-
-# Define the function
-def login(user, password):
-    if user in users and users[user] == password:
-        return "Login Successful"
-    else:
-        return "Access Denied"
-
-# Call the function
-print (login(user, password))
-```
-
-Doc string
+## DOC STRING
 ```py
 def sum(a,b):
     '''This function will sum two numbers'''
@@ -86,26 +63,6 @@ print(div(a,b))
 ```
 <img width="146" height="49" alt="image" src="https://github.com/user-attachments/assets/6b6939fe-f542-459a-907b-b24693f1fe13" />
 
-### Return as single string
-```py
-def full_name(first, last):
-    return (f"{first} {last}")
-print(full_name("Panda", "Cloud"))
-```
-<img width="89" height="20" alt="image" src="https://github.com/user-attachments/assets/7e91a411-66a7-4bab-99db-af64e2983fc5" />
-
-### Calculate area of square/rectangle
-```py
-# Calculate area of square/rectangle
-def area(l,w):
-    return l*w
-print(area(30,40))
-```
-```txt
-# Output
-1200
-```
-
 ### Multiply function
 Using positional arguments
 ```py
@@ -133,7 +90,6 @@ multiply(10,11,12)            # overwriting arguments
 ```
 <img width="43" height="20" alt="image" src="https://github.com/user-attachments/assets/401b4ac1-762a-44a2-bd68-8bb93279b4dc" />
 
-
 ### Average function
 ```py
 def average(a,b,c):     # here a,b,c are parameters
@@ -158,6 +114,41 @@ a3 = average(7,8,9)
 print(a1,a2,a3)
 ```
 <img width="84" height="19" alt="image" src="https://github.com/user-attachments/assets/c21a41b2-441c-4a3a-b0a9-0f9f183f8eca" />
+
+### Calculate area of square/rectangle
+```py
+# Calculate area of square/rectangle
+def area(l,w):
+    return l*w
+print(area(30,40))
+```
+```txt
+# Output
+1200
+```
+
+## Login System
+```py
+user = input("Enter your username: ")
+password = input("Enter your password: ")
+
+# Dictionary of users and passwords
+users = {
+    "admin": "1234",
+    "panda": "1234",
+    "nasir": "1234"
+}
+
+# Define the function
+def login(user, password):
+    if user in users and users[user] == password:
+        return "Login Successful"
+    else:
+        return "Access Denied"
+
+# Call the function
+print (login(user, password))
+```
 
 ## RECURSION
 - Recursion is where a function calls itself again & again
