@@ -1,5 +1,5 @@
 # FUNCTIONS
-- Functions in python are used to reusable code
+- Functions in python are used for reusable code
 - Without functions, you need to write logic repetitively
 - But with functions, you write the logic once and use it multiple times
 - You can save the logic in a separate file & use it in your main code using `from <logic-file> import <function-name>`
