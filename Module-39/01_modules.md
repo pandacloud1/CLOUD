@@ -14,8 +14,8 @@
 ### Simple 'Hello World' module
 mymodule.py
 ```py
-### Define your module
-### File name: mymodule.py
+# Define your module
+# File name: mymodule.py
 def hello():
     print("Hello World")
 ```
@@ -27,7 +27,7 @@ mymodule.hello()
 <img width="92" height="19" alt="image" src="https://github.com/user-attachments/assets/d184966d-5ec3-4d2b-a966-15e5e51e06ec" />
 
 ### Sum module (using sum function)
-Sum function
+mymodule.py
 ```py
 # File name: mymodule.py
 def sum(a,b,c):
