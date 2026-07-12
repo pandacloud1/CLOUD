@@ -371,15 +371,24 @@ print("Disk Free:", convert_bytes(usage.free))
 ```
 
 ## BOTO3 MODULE
-- Used for AWS services
-
-### Creating an EC2 using `boto3` module
+- It is used for AWS services
 - Install boto3 using command `pip install boto3`
 - If you have multiple python version, then ensure you install boto3 in correct version or uninstall older python versions
 - Create an IAM user in AWS. Get the access key and secret key
 - Run `aws configure` in your terminal & enter the access key and secret key
 - You can now start using `boto3` module from your system
 
+### List S3 bucket in your AWS account
+- Ref: [https://docs.aws.amazon.com/boto3/latest/guide/quickstart.html]
+```py
+import boto3
+s3 = boto3.resource('s3')
+for bucket in s3.buckets.all():
+    print(bucket.name)
+```
+
+### Creating an EC2 using `boto3` module
+- Ref: [https://docs.aws.amazon.com/boto3/latest/guide/ec2-example-managing-instances.html]
 ```py
 import boto3
 
@@ -394,4 +403,52 @@ response = ec2.run_instances(
 )
 
 print("Created instance:", response['Instances'][0]['InstanceId'])
+```
+
+### Describe the EC2
+```py
+import boto3
+
+ec2 = boto3.client('ec2')
+response = ec2.describe_instances()
+print(response)
+```
+
+### Get the instance IDs
+```py
+import boto3
+ec2 = boto3.client('ec2')
+
+# Describe all instances
+response = ec2.describe_instances()
+
+for reservation in response['Reservations']:
+    for instance in reservation['Instances']:
+        print("Instance ID:", instance['InstanceId'], 
+              "State:", instance['State']['Name'])
+```
+
+### Delete the EC2
+```py
+import boto3
+instance_id = input('Enter your instance id: ')
+ec2 = boto3.client('ec2')
+
+ec2.terminate_instances(InstanceIds=[instance_id])
+print(f'The Instance "{instance_id}" has been deleted successfully')
+```
+
+### Delete the EC2 only if it exists or give error if doesn't exists
+```py
+import boto3
+from botocore.exceptions import ClientError
+
+instance_id = input('Enter your instance id: ')
+ec2 = boto3.client('ec2')
+
+try:
+    ec2.terminate_instances(InstanceIds=[instance_id])
+    print(f'The Instance "{instance_id}" has been deleted successfully')
+except ClientError:
+    print(f'Error: Instance "{instance_id}" does not exist')
 ```
