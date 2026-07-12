@@ -326,8 +326,8 @@ Enter the power: 8
 
 ### REQUESTS MODULE
 - Requests module is used to fetch online urls
-### Requests module (used for external modules)
 - Install requests using `pip install requests`
+
 ```py
 import requests
 r = requests.get("https://www.example.com")
