@@ -1,4 +1,4 @@
-## MODULES
+# MODULES
 - Modules are used to import somebody else's code
 - They are of three types: Custom-created, Build-in modules & External modules
 - Build-in modules can be found here [https://docs.python.org/3/py-modindex.html]
