@@ -9,9 +9,9 @@
 
 ## CUSTOM CREATING YOUR MODULE
 ### Simple 'Hello World' module
-module.py
+mymodule.py
 ```py
-### Define module
+### Define your module
 ### File name: mymodule.py
 def hello():
     print("Hello World")
@@ -26,20 +26,20 @@ mymodule.hello()
 ### Sum module (using sum function)
 Sum function
 ```py
-# File name: module.py
+# File name: mymodule.py
 def sum(a,b,c):
     x = a+b+c
     print (x)
 ```
 Main module
 ```py
-import module
-module.sum(1,2,3)
+import mymodule
+mymodule.sum(1,2,3)
 ```
 <img width="29" height="21" alt="image" src="https://github.com/user-attachments/assets/ad715f53-300c-4367-9810-c118af76f6c7" />
 
 ### Square module
-module.py
+mymodule.py
 ```py
 def square(x):
     return(x*x)
@@ -47,13 +47,13 @@ def square(x):
 main.py
 ```py
 num = int(input("Please enter any num: "))
-import module
-print(module.square(num))
+import mymodule
+print(mymodule.square(num))
 ```
 <img width="166" height="34" alt="image" src="https://github.com/user-attachments/assets/a3b71b3c-b278-42b5-8386-e5e409390550" />
 
 ### Check if number is even/odd
-module.py
+mymodule.py
 ```py
 def is_even(n):
     if n%2==0:
@@ -64,8 +64,8 @@ def is_even(n):
 main.py
 ```py
 n = int(input("Enter a number to check even/odd: "))
-import module
-print(module.is_even(n))
+import mymodule
+print(mymodule.is_even(n))
 ```
 <img width="236" height="32" alt="image" src="https://github.com/user-attachments/assets/c40859cd-f66d-44f9-a377-bac352cc1302" />
 
