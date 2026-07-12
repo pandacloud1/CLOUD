@@ -376,6 +376,10 @@ print("Disk Free:", convert_bytes(usage.free))
 ### Creating an EC2 using `boto3` module
 - Install boto3 using command `pip install boto3`
 - If you have multiple python version, then ensure you install boto3 in correct version or uninstall older python versions
+- Create an IAM user in AWS. Get the access key and secret key
+- Run `aws configure` in your terminal & enter the access key and secret key
+- You can now start using `boto3` module from your system
+
 ```py
 import boto3
 
