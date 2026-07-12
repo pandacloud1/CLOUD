@@ -1,13 +1,16 @@
 ## MODULES
 - Modules are used to import somebody else's code
-- You can write you own modules & import them
-- They are of two types: Build-in modules & external modules
+- They are of three types: Custom-created, Build-in modules & External modules
 - Build-in modules can be found here [https://docs.python.org/3/py-modindex.html]
 - External modules can be installed via 'pip' (eg. pip install requests, requests module is used to fetch online urls)
 - The dependency py files will be saved locally in your system
 - Commonly used modules: requests, pandas, numpy, math, os, sys, boto3, botocore, etc.
 
 ## CUSTOM CREATING YOUR MODULE
+- You can write you own modules & import them
+- Keep your module in a separate file (eg. `module.py`), you can give any name of your choice
+- Call your module in your code using `module.fn(x)`
+  
 ### Simple 'Hello World' module
 mymodule.py
 ```py
@@ -123,8 +126,9 @@ Note:
 
 ## BUILT-IN MODULES
 - Build-in modules can be found here [https://docs.python.org/3/py-modindex.html]
-- 
-## OS MODULE
+- You can simply import build-in modules & use them
+
+### OS MODULE
 ### Print current working directory
 ```py
 import os
@@ -198,7 +202,7 @@ else:
 ```
 
 
-## SHUTIL MODULE
+### SHUTIL MODULE
 ### Remove directories with content
 ```py
 import shutil
@@ -273,6 +277,65 @@ print("Used:", convert_bytes(usage.used))
 print("Free:", convert_bytes(usage.free))
 ```
 
+### MATH MODULE
+### Factorial of a number
+```py
+import math
+print('Find the factorial of any number')
+x = int(input('Enter any number: '))
+print(math.factorial(x))
+```
+```txt
+# output
+Enter any number: 5
+120
+```
+
+### Square root of a number
+```py
+import math
+print('Find the square root of any number')
+num = int(input('Enter any number: '))
+print(math.isqrt(num))
+```
+```txt
+# output
+Enter any number: 16
+4
+```
+
+### Power of a number
+```py
+import math
+print('Find the power of any number')
+x = int(input('Enter any number: '))
+y = int(input('Enter the power: '))
+print(int(math.pow(x,y)))
+```
+```txt
+# output
+Find the power of any number
+Enter any number: 2
+Enter the power: 8
+256
+```
+
+## EXTERNAL MODULES
+- You can directly use build-in modules in python using `import module`
+- External modules can be installed via 'pip' (eg. `pip install requests`)
+
+### REQUESTS MODULE
+- Requests module is used to fetch online urls
+### Requests module (used for external modules)
+- Install requests using `pip install requests`
+```py
+import requests
+r = requests.get("https://www.example.com")
+print(r.text)
+```
+<img width="575" height="100" alt="image" src="https://github.com/user-attachments/assets/e34d5877-c260-4988-a29d-858ec6694077" />
+
+### PSUTIL MODULE
 ### Python system monitor (CPU, RAM & DISK USAGE)
 - Install psutil using `pip install psutil`
 ```py
@@ -306,62 +369,6 @@ print("Disk Total:", convert_bytes(usage.total))
 print("Disk Used:", convert_bytes(usage.used))
 print("Disk Free:", convert_bytes(usage.free))
 ```
-
-## MATH MODULE
-### Factorial of a number
-```py
-import math
-print('Find the factorial of any number')
-x = int(input('Enter any number: '))
-print(math.factorial(x))
-```
-```txt
-# output
-Enter any number: 5
-120
-```
-
-### Square root of a number
-```py
-import math
-print('Find the square root of any number')
-num = int(input('Enter any number: '))
-print(math.isqrt(num))
-```
-```txt
-# output
-Enter any number: 16
-4
-```
-
-# Power of a number
-```py
-import math
-print('Find the power of any number')
-x = int(input('Enter any number: '))
-y = int(input('Enter the power: '))
-print(int(math.pow(x,y)))
-```
-```txt
-# output
-Find the power of any number
-Enter any number: 2
-Enter the power: 8
-256
-```
-
-## EXTERNAL MODULES
-- External modules can be installed via 'pip' (eg. pip install requests, requests module is used to fetch online urls)
-
-## REQUESTS MODULE
-### Requests module (used for external modules)
-- Install requests using `pip install requests`
-```py
-import requests
-r = requests.get("https://www.example.com")
-print(r.text)
-```
-<img width="575" height="100" alt="image" src="https://github.com/user-attachments/assets/e34d5877-c260-4988-a29d-858ec6694077" />
 
 ## BOTO3 MODULE
 - Used for AWS services
