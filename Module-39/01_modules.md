@@ -1,20 +1,13 @@
 ## MODULES
 - Modules are used to import somebody else's code
+- You can write you own modules & import them
 - They are of two types: Build-in modules & external modules
 - Build-in modules can be found here [https://docs.python.org/3/py-modindex.html]
-- You can write you own modules & import them
 - External modules can be installed via 'pip' (eg. pip install requests, requests module is used to fetch online urls)
 - The dependency py files will be saved locally in your system
 - Commonly used modules: requests, pandas, numpy, math, os, sys, boto3, botocore, etc.
 
-### Math module (Using 'math' module to find square root)
-```py
-n = int(input("Enter the number to find square root: "))
-import math
-print(math.sqrt(n))
-```
-<img width="277" height="32" alt="image" src="https://github.com/user-attachments/assets/432f6cc7-a07a-4e40-a014-8b09671ff20b" />
-
+## CUSTOM CREATING YOUR MODULE
 ### Simple 'Hello World' module
 module.py
 ```py
@@ -76,19 +69,306 @@ print(module.is_even(n))
 ```
 <img width="236" height="32" alt="image" src="https://github.com/user-attachments/assets/c40859cd-f66d-44f9-a377-bac352cc1302" />
 
-### Requests module (used for external modules)
+## WORKING WITH FILES (using 'with open')
+### Reading a file
 ```py
-# First install requests using 'pip install requests'
+file = input('Enter file to read: ')
+
+with open(file, 'r') as f:
+  content = f.read()
+print(content)
+```
+```txt
+# output
+Enter file name to read: test.txt
+This is a test file
+```
+
+### Writing to a file (overwriting existing content)
+```py
+file = input('Enter the file name: ')
+content = input('Enter the content to add to the file: ')
+
+with open(file, 'w') as f:
+    add = f.write(content)
+print('Content added successfully! Please check the file.')
+```
+```txt
+# output
+Enter the file name: test.txt
+Enter the content to add to the file: new line added!
+Content added successfully! Please check the file
+```
+
+### Writing to a file (retaining existing content)
+```py
+file = input('Enter the file name: ')
+content = input('Enter the content to add to the file: ')
+
+with open(file, 'a') as f:                  # a = append
+    add = f.write('\n' + content)
+print('Content added successfully! Please check the file.')
+```
+```txt
+# output
+Enter the file name: test.txt
+Enter the content to add to the file: new line 2 added!
+Content added successfully! Please check the file
+```
+
+Note:
+- What if file doesn't exists?
+  - read will throw an error 
+  - write/append will create a file
+
+## BUILT-IN MODULES
+- Build-in modules can be found here [https://docs.python.org/3/py-modindex.html]
+- 
+## OS MODULE
+### Print current working directory
+```py
+import os
+print(os.getcwd())                                             
+```
+
+### Check if file exists
+```py
+import os
+print(os.path.exists("dir"))          
+```  
+
+```py
+import os
+
+filename = input('Enter file name: ')
+
+if os.path.exists(filename):
+    print("File exists!")
+else:
+    print("File does not exist!")
+```
+```txt
+# output
+Enter file name: test.txt
+File exists!
+```
+
+### Check if file exists & read the file
+```py
+import os
+filename = input('Enter file name: ')
+
+if os.path.exists(filename):
+    with open(filename, "r") as f:   # open in read mode
+        content = f.read()
+        print('File exists & below are the contents')
+        print(content)
+else:
+    print("File not found!")
+```
+
+### List files & directories
+```py
+import os
+print(os.listdir("dir"))  
+# list dir/files inside dir, use 'r' = raw string for complete path
+```
+
+### Removes files
+```py
+import os
+os.remove("<file-name>")    
+
+### Remove empty directories
+```py
+import os                                 
+os.rmdir("abcdir")
+```
+```py
+import os 
+print('NOTE: THIS WILL DELETE EMPTY DIRECTORIES ONLY!')
+print('To delete directories with content use shutil module "rmtree"')
+dir = input('Enter directory name: ')
+
+if os.path.exists(dir):
+    os.rmdir(dir)
+    print('Directory has been deleted')
+else:
+    print('Directory not found!')
+```
+
+
+## SHUTIL MODULE
+### Remove directories with content
+```py
+import shutil
+shutil.rmtree("abcdir")
+```
+
+```py
+import os
+import shutil
+
+print('WARNING: Note that this will delete directories & its contents permanently')
+dir = input('Enter directory name to delete: ')
+
+if os.path.exists(dir): 
+    shutil.rmtree(dir)
+    print('Directory has been deleted!')
+else:
+    print('Directory not found')
+```
+
+### Create a copy of a file
+```py
+import shutil
+shutil.copy("file1.txt", "new-file1.txt")
+```
+
+### Create a copy of a directory
+```py
+import shutil
+shutil.copytree('dir', 'new-dir')
+```
+
+### Move file or directory
+```py
+import shutil
+shutil.move("dir/file1.txt", "new-dir/file1.txt")
+```
+
+### Archive (zip) a directory (for backup)
+```py
+import shutil
+shutil.make_archive("backup", "zip", "dir")
+```
+```txt
+# output
+backup.zip will be created from 'dir'
+```
+
+### Disk usage
+```py
+import shutil
+usage = shutil.disk_usage("/")
+print("Total:", usage.total, "Used:", usage.used, "Free:", usage.free)
+
+```
+
+### Disk usage (Human readable)
+```py
+import shutil
+
+def convert_bytes(size):
+    # Convert bytes into KB, MB, GB, TB
+    for unit in ['Bytes', 'KB', 'MB', 'GB', 'TB']:
+        if size < 1024:
+            return f"{size:.2f} {unit}"
+        size /= 1024
+
+usage = shutil.disk_usage("/")
+
+print("Total:", convert_bytes(usage.total))
+print("Used:", convert_bytes(usage.used))
+print("Free:", convert_bytes(usage.free))
+```
+
+### Python system monitor (CPU, RAM & DISK USAGE)
+- Install psutil using `pip install psutil`
+```py
+import psutil
+import shutil
+
+# CPU usage
+print('#----- CPU -----#')
+print("CPU Usage:", psutil.cpu_percent(interval=1), "%")
+
+# RAM usage
+memory = psutil.virtual_memory()
+print('')
+print('#----- RAM -----#')
+print("Total RAM:", f"{memory.total / (1024**3):.2f} GB")
+print("Used RAM:", f"{memory.used / (1024**3):.2f} GB")
+print("Free RAM:", f"{memory.available / (1024**3):.2f} GB")
+print("RAM Usage:", memory.percent, "%")
+
+# Disk usage
+usage = shutil.disk_usage("/")
+def convert_bytes(size):
+    for unit in ['Bytes', 'KB', 'MB', 'GB', 'TB']:
+        if size < 1024:
+            return f"{size:.2f} {unit}"
+        size /= 1024
+        
+print('')
+print('#----- DISK -----#')
+print("Disk Total:", convert_bytes(usage.total))
+print("Disk Used:", convert_bytes(usage.used))
+print("Disk Free:", convert_bytes(usage.free))
+```
+
+## MATH MODULE
+### Factorial of a number
+```py
+import math
+print('Find the factorial of any number')
+x = int(input('Enter any number: '))
+print(math.factorial(x))
+```
+```txt
+# output
+Enter any number: 5
+120
+```
+
+### Square root of a number
+```py
+import math
+print('Find the square root of any number')
+num = int(input('Enter any number: '))
+print(math.isqrt(num))
+```
+```txt
+# output
+Enter any number: 16
+4
+```
+
+# Power of a number
+```py
+import math
+print('Find the power of any number')
+x = int(input('Enter any number: '))
+y = int(input('Enter the power: '))
+print(int(math.pow(x,y)))
+```
+```txt
+# output
+Find the power of any number
+Enter any number: 2
+Enter the power: 8
+256
+```
+
+## EXTERNAL MODULES
+- External modules can be installed via 'pip' (eg. pip install requests, requests module is used to fetch online urls)
+
+## REQUESTS MODULE
+### Requests module (used for external modules)
+- Install requests using `pip install requests`
+```py
 import requests
 r = requests.get("https://www.example.com")
 print(r.text)
 ```
 <img width="575" height="100" alt="image" src="https://github.com/user-attachments/assets/e34d5877-c260-4988-a29d-858ec6694077" />
 
+## BOTO3 MODULE
+- Used for AWS services
 
 ### Creating an EC2 using `boto3` module
 - Install boto3 using command `pip install boto3`
-- If you have multiple python version, then ensure you install boto3 in correct version
+- If you have multiple python version, then ensure you install boto3 in correct version or uninstall older python versions
 ```py
 import boto3
 
