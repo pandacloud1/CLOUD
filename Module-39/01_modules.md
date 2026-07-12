@@ -4,7 +4,7 @@
 - Build-in modules can be found here [https://docs.python.org/3/py-modindex.html]
 - External modules can be installed via 'pip' (eg. pip install requests, requests module is used to fetch online urls)
 - The dependency py files will be saved locally in your system
-- Commonly used modules: requests, pandas, numpy, math, os, sys, boto3, botocore, etc.
+- Commonly used modules: requests, math, os, shutil, sys, boto3, botocore, etc.
 
 ## CUSTOM CREATING YOUR MODULE
 - You can write you own modules & import them
