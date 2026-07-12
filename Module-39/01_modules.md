@@ -34,7 +34,7 @@ def sum(a,b,c):
     x = a+b+c
     print (x)
 ```
-Main module
+main.py
 ```py
 import mymodule
 mymodule.sum(1,2,3)
