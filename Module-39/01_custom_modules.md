@@ -8,7 +8,7 @@
 
 ## CUSTOM CREATING YOUR MODULE
 - You can write you own modules & import them
-- Keep your module in a separate file (eg. `module.py`), you can give any name of your choice
+- Keep your module in a separate file (eg. `mymodule.py`), you can give any name of your choice
 - Call your module in your code using `module.fn(x)`
   
 ### Simple 'Hello World' module
