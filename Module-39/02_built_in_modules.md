@@ -1,8 +1,6 @@
 ## BUILT-IN MODULES
 - Build-in modules can be found here [https://docs.python.org/3/py-modindex.html]
 - You can simply import build-in modules & use them
-- So you do not need to write functions for square, square root, add, sum, etc, as they are already provided in 'math' module
-- Other examples are also given below
 
 ### MATH MODULE
 ### Factorial of a number
