@@ -16,11 +16,12 @@ mymodule.py
 ```py
 # Define your module
 # File name: mymodule.py
-def hello():
-    print("Hello World")
+def hello(name):
+    return(f"Hello {name}")
 ```
 main.py
 ```py
+name = input('Enter your name: ')
 import mymodule
 mymodule.hello()
 ```
