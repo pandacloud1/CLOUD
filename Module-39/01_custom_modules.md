@@ -68,8 +68,7 @@ x = int(input('Enter number: '))
 import mymodule
 print(mymodule.fn(x))
 ```
-<img width="166" height="34" alt="image" src="https://github.com/user-attachments/assets/0d3a3406-c5e9-4755-b0b4-0a06dfa3c83c" />
-
+<img width="110.5" height="30.5" alt="image" src="https://github.com/user-attachments/assets/ff52c94d-6dd5-43c1-9944-2618bab57b32" />
 
 ### Check if number is even/odd
 mymodule.py
