@@ -56,6 +56,19 @@ print(mymodule.square(num))
 ```
 <img width="166" height="34" alt="image" src="https://github.com/user-attachments/assets/a3b71b3c-b278-42b5-8386-e5e409390550" />
 
+### Square root function
+mymodule.py
+```py
+def fn(x):
+    return(x**0.5)
+```
+main.py
+```py
+x = int(input('Enter number: '))
+import mymodule
+print(mymodule.fn(x))
+```
+
 ### Check if number is even/odd
 mymodule.py
 ```py
