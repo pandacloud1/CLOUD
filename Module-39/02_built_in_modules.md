@@ -1,6 +1,51 @@
 ## BUILT-IN MODULES
 - Build-in modules can be found here [https://docs.python.org/3/py-modindex.html]
 - You can simply import build-in modules & use them
+- So you do not need to write functions for square, square root, add, sum, etc, as they are already provided in 'math' module
+- Other examples are also given below
+
+### MATH MODULE
+### Factorial of a number
+```py
+import math
+print('Find the factorial of any number')
+x = int(input('Enter any number: '))
+print(math.factorial(x))
+```
+```txt
+# output
+Enter any number: 5
+120
+```
+
+### Square root of a number
+```py
+import math
+print('Find the square root of any number')
+num = int(input('Enter any number: '))
+print(math.isqrt(num))
+```
+```txt
+# output
+Enter any number: 16
+4
+```
+
+### Power of a number
+```py
+import math
+print('Find the power of any number')
+x = int(input('Enter any number: '))
+y = int(input('Enter the power: '))
+print(int(math.pow(x,y)))
+```
+```txt
+# output
+Find the power of any number
+Enter any number: 2
+Enter the power: 8
+256
+```
 
 ### OS MODULE
 ### Print current working directory
@@ -149,47 +194,4 @@ usage = shutil.disk_usage("/")
 print("Total:", convert_bytes(usage.total))
 print("Used:", convert_bytes(usage.used))
 print("Free:", convert_bytes(usage.free))
-```
-
-### MATH MODULE
-### Factorial of a number
-```py
-import math
-print('Find the factorial of any number')
-x = int(input('Enter any number: '))
-print(math.factorial(x))
-```
-```txt
-# output
-Enter any number: 5
-120
-```
-
-### Square root of a number
-```py
-import math
-print('Find the square root of any number')
-num = int(input('Enter any number: '))
-print(math.isqrt(num))
-```
-```txt
-# output
-Enter any number: 16
-4
-```
-
-### Power of a number
-```py
-import math
-print('Find the power of any number')
-x = int(input('Enter any number: '))
-y = int(input('Enter the power: '))
-print(int(math.pow(x,y)))
-```
-```txt
-# output
-Find the power of any number
-Enter any number: 2
-Enter the power: 8
-256
 ```
