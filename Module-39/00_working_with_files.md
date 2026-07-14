@@ -6,6 +6,13 @@ file = input('Enter file to read: ')
 with open(file, 'r') as f:
   content = f.read()
 print(content)
+
+# Explanation
+# with: ensure to close the file automatically
+# open(): It is a function used to open a file either in read, write or append mode
+# r: read
+# f: variable, file content is stored here
+# read(): function to read a file
 ```
 ```txt
 # output
