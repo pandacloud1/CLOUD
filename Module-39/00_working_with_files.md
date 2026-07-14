@@ -12,7 +12,7 @@ print(content)
 # open(): It is a function used to open a file either in read, write or append mode
 # r: read
 # f: variable, file content is stored here
-# read(): It is function to read a file
+# read(): It is a function to read a file
 ```
 ```txt
 # output
