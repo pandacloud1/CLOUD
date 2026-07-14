@@ -3,6 +3,21 @@
 - You can simply import build-in modules & use them
 
 ### MATH MODULE
+### Remainder of a number
+```py
+import math
+x = int(input('Enter a number: '))
+y = int(input('Enter a number to divide with: '))
+print('The remainder is: ')
+print(math.remainder(x,y))
+```
+```txt
+# output
+Enter a number to divide with: 3
+The remainder is: 
+1.0
+```
+
 ### Factorial of a number
 ```py
 import math
