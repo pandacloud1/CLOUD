@@ -13,6 +13,7 @@ print(math.remainder(x,y))
 ```
 ```txt
 # output
+Enter a number: 10
 Enter a number to divide with: 3
 The remainder is: 
 1.0
