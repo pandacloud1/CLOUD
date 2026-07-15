@@ -68,6 +68,14 @@ for bucket in s3.buckets.all():
 ### Creating an EC2 using `boto3` module
 - Ref: [https://docs.aws.amazon.com/boto3/latest/guide/migrationec2.html#launching-new-instances]
 - [https://docs.aws.amazon.com/boto3/latest/guide/ec2-example-managing-instances.html]
+- You can use `create_instances` or `run_instances`
+```py
+import boto3
+ec2 = boto3.resource('ec2')
+ec2.create_instances(ImageId='ami-08f44e8eca9095668', InstanceType='t2.micro', MinCount=1, MaxCount=1)
+print('Instance has been created')
+```
+
 ```py
 import boto3
 
