@@ -66,7 +66,8 @@ for bucket in s3.buckets.all():
 ```
 
 ### Creating an EC2 using `boto3` module
-- Ref: [https://docs.aws.amazon.com/boto3/latest/guide/ec2-example-managing-instances.html]
+- Ref: [https://docs.aws.amazon.com/boto3/latest/guide/migrationec2.html#launching-new-instances]
+- [https://docs.aws.amazon.com/boto3/latest/guide/ec2-example-managing-instances.html]
 ```py
 import boto3
 
