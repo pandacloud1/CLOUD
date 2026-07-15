@@ -118,6 +118,24 @@ for reservation in response['Reservations']:
 ### Delete the EC2
 ```py
 import boto3
+ec2 = boto3.client('ec2')
+response = ec2.describe_instances()
+
+print('Your existing EC2 instances are:')
+for reservation in response['Reservations']:
+    for instance in reservation['Instances']:        
+        print(instance['InstanceId'])
+
+print('Deleting EC2 instances')
+for reservation in response['Reservations']:
+    for instance in reservation['Instances']:  
+      instance_id = instance['InstanceId']
+      ec2.terminate_instances(InstanceIds=[instance_id])
+print('EC2 instances have been successfully deleted')
+```
+Delete by taking input from user
+```py
+import boto3
 instance_id = input('Enter your instance id: ')
 ec2 = boto3.client('ec2')
 
